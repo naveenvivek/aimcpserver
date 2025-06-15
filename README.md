@@ -90,13 +90,18 @@ This project uses:
 
 ```
 MCPserver/
-├── weather_server.py       # Main MCP server
-├── test_server.py         # Server test script
-├── pyproject.toml         # Project configuration
+├── weather_server.py           # Main MCP server
+├── simple_weather_agent.py     # AI agent for natural language queries
+├── demo_weather_agent.py       # Demo script for the AI agent
+├── test_server.py              # Server test script
+├── run_weather_server.sh       # Shell script to run the server
+├── pyproject.toml              # Project configuration
+├── uv.lock                     # Dependency lock file
 ├── .vscode/
-│   └── mcp.json          # VS Code MCP configuration
+│   ├── mcp.json                # VS Code MCP configuration
+│   └── tasks.json              # VS Code tasks
 └── .github/
-    └── copilot-instructions.md  # Copilot instructions
+    └── copilot-instructions.md # Copilot instructions
 ```
 
 ### Adding New Tools
