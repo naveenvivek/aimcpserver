@@ -1,0 +1,14 @@
+{
+  "servers": {
+    "weather-server": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        "/Users/naveenvivek/VSCode/MCPserver",
+        "run",
+        "weather_server.py"
+      ]
+    }
+  }
+}
