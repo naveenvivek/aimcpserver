@@ -1,0 +1,50 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Smart Weather AI Agent",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/smart_weather_agent.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Demo Smart Agent",
+            "type": "debugpy", 
+            "request": "launch",
+            "program": "${workspaceFolder}/demo_smart_agent.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {},
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "Demo Weather Agent",
+            "type": "debugpy",
+            "request": "launch", 
+            "program": "${workspaceFolder}/demo_weather_agent.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Test Weather Server",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/test_server.py", 
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Current Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

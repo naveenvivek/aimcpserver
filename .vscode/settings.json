@@ -1,0 +1,28 @@
+{
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic",
+    
+    // File associations
+    "files.associations": {
+        "*.py": "python"
+    },
+    
+    // Enable right-click run
+    "python.terminal.executeInFileDir": true,
+    "python.terminal.launchArgs": [],
+    
+    // Code runner settings (if you have the extension)
+    "code-runner.executorMap": {
+        "python": "uv run $fileName"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    
+    // Terminal settings
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.env.osx": {
+        "PATH": "${env:HOME}/.local/bin:${env:PATH}"
+    }
+}

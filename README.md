@@ -90,16 +90,20 @@ This project uses:
 
 ```
 MCPserver/
-├── weather_server.py           # Main MCP server
-├── simple_weather_agent.py     # AI agent for natural language queries
-├── demo_weather_agent.py       # Demo script for the AI agent
+├── weather_server.py           # Main MCP server with weather tools
+├── smart_weather_agent.py      # Smart AI agent (no hardcoding)
+├── simple_weather_agent.py     # Simple pattern-matching agent  
+├── demo_smart_agent.py         # Demo for smart AI agent
+├── demo_weather_agent.py       # Demo for simple agent
 ├── test_server.py              # Server test script
-├── run_weather_server.sh       # Shell script to run the server
+├── run_weather_server.sh       # Shell script to run server
 ├── pyproject.toml              # Project configuration
 ├── uv.lock                     # Dependency lock file
+├── .env.example                # Template for API keys
 ├── .vscode/
-│   ├── mcp.json                # VS Code MCP configuration
-│   └── tasks.json              # VS Code tasks
+│   ├── tasks.json              # VS Code tasks
+│   ├── launch.json             # Debug configurations
+│   └── mcp.json                # MCP configuration
 └── .github/
     └── copilot-instructions.md # Copilot instructions
 ```

@@ -17,6 +17,75 @@
 					"PATH": "${env:HOME}/.local/bin:${env:PATH}"
 				}
 			}
+		},
+		{
+			"label": "Run Smart Weather AI Agent",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"smart_weather_agent.py"
+			],
+			"group": "build",
+			"isBackground": false,
+			"problemMatcher": [],
+			"options": {
+				"env": {
+					"PATH": "${env:HOME}/.local/bin:${env:PATH}"
+				}
+			},
+			"presentation": {
+				"echo": true,
+				"reveal": "always",
+				"focus": true,
+				"panel": "new"
+			}
+		},
+		{
+			"label": "Demo Smart Agent",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"demo_smart_agent.py"
+			],
+			"group": "test",
+			"isBackground": false,
+			"problemMatcher": [],
+			"options": {
+				"env": {
+					"PATH": "${env:HOME}/.local/bin:${env:PATH}"
+				}
+			}
+		},
+		{
+			"label": "Demo Simple Weather Agent",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"demo_weather_agent.py"
+			],
+			"group": "test",
+			"isBackground": false,
+			"problemMatcher": [],
+			"options": {
+				"env": {
+					"PATH": "${env:HOME}/.local/bin:${env:PATH}"
+				}
+			}
+		},
+		{
+			"label": "Test Weather Server",
+			"type": "shell",
+			"command": "uv",
+			"args": [
+				"run",
+				"test_server.py"
+			],
+			"group": "test",
+			"isBackground": false,
+			"problemMatcher": []
 		}
 	]
 }
